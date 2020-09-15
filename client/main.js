@@ -4617,6 +4617,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _sdk_services_custom_UserDetails__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sdk/services/custom/UserDetails */ "./sdk/services/custom/UserDetails.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+
 
 
 
@@ -4630,7 +4632,7 @@ var UserService = /** @class */ (function () {
         return this.UserDetailsApi.invite(data);
     };
     UserService.prototype.getData = function (userId) {
-        return this.http.get("https://update-video-chat.herokuapp.com/" + userId);
+        return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].api_url + "/api//userDetails/" + userId);
     };
     UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
