@@ -4630,7 +4630,7 @@ var UserService = /** @class */ (function () {
         return this.UserDetailsApi.invite(data);
     };
     UserService.prototype.getData = function (userId) {
-        return this.http.get("http://localhost:3000/api/userDetails/" + userId);
+        return this.http.get("https://update-video-chat.herokuapp.com/" + userId);
     };
     UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -4661,7 +4661,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 var environment = {
     production: false,
-    api_url: "http://localhost:3000",
+    api_url: "https://update-video-chat.herokuapp.com/",
 };
 /*
  * For easier debugging in development mode, you can import the following file

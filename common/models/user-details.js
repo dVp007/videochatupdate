@@ -72,7 +72,7 @@ module.exports = function (Userdetails) {
   };
 
   async function mail(md, name) {
-    let link = `http://localhost:4200/maillogin?roomName=${md.userId}&dateTime=${md.dateTime}`
+    let link = `https://update-video-chat.herokuapp.com?roomName=${md.userId}&dateTime=${md.dateTime}`
     const template = `
     <!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
