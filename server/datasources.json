@@ -1,0 +1,14 @@
+{
+  "mongodb": {
+    "host": "ds113136.mlab.com",
+    "port": 13136,
+    "url": "",
+    "database": "videocall",
+    "password": "pass123",
+    "name": "mongodb",
+    "user": "siddhant",
+    "useNewUrlParser": true,
+    "connector": "mongodb",
+    "allowExtendedOperators": true
+  }
+}
